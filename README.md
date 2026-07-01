@@ -125,7 +125,7 @@ G --> H
 
 ### Macro Execution
 - The animation below demonstrates the complete automation workflow, from loading the source files to generating customer-specific workbooks organized by region.
-![Macro Execution](images/macro-execution.gif)
+![Macro Execution](images/macro_execution.gif)
 
 ### Source Workbook
 ![Source Macro](images/macro-board-report.png)
