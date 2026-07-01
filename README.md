@@ -125,77 +125,36 @@ G --> H
 
 ### Macro Execution
 - The animation below demonstrates the complete automation workflow, from loading the source files to generating customer-specific workbooks organized by region.
-
 ![Macro Execution](images/macro-execution.gif)
 
 ### Source Workbook
-![Source UDM_Dispute](images/input-open-udm-dispute.png)
-![Source UDM_Notes](images/input-open-udm-notes.png)
+![Source Macro](images/macro-board-report.png)
+![Source UDM_Dispute](images/open-udm-dispute.png)
+![Source UDM_Notes](images/open-udm-notes.png)
 
-### Main Worksheet After Data Preparation
-![Prepared Data](images/merged-data.png)
+### Manager Summary
+![Manager Data Summary](images/manager-summary.png)
 
-### Regional Split
-![Regional Worksheets](images/region-split.png)
+### Processor Summary
+![Processor Data Summary](images/processor-summary.png)
 
-### Generated Output
-![Output Folder](images/output-folders.png)
-
+### Customer Summary
+![Customer Data Summary](images/customer-summary.png)
 
 ## 📈 Business Problem
-
-The dispute management team works with weekly dispute reports organized by customer segment (for example, Africa, Europe, North America, Latin America, and Asia Pacific).
-
-Each customer segment has its own dispute workbook containing hundreds or thousands of customer disputes.
-
-Every reporting cycle, analysts needed to:
-
-Open the customer segment dispute workbook
-Open the UDM_Notes workbook
-Match dispute records using a unique identifier
-Merge dispute notes into the report
-Generate management Pivot Tables
-Summarize open disputes by manager
-Calculate disputed values
-Filter customer accounts based on business criteria
-Prepare processor information for email distribution
-
-Performing these tasks manually required considerable time and increased the risk of reporting inconsistencies.
-
-## 📁 Project Structure (just use the guide)
-Board-Report-Automation/
-│
-├── README.md
-├── LICENSE
-├── .gitignore
-│
-├── src/
-│   ├── Main.bas
-│   ├── FileHelpers.bas
-│   ├── NotesProcessor.bas
-│   ├── PivotReportGenerator.bas
-│   ├── ReportFormatter.bas
-│   └── ExcelHelpers.bas
-│
-├── docs/
-│   ├── Workflow.pdf
-│   └── Screenshots/
-│
-├── images/
-│   ├── input_workbooks.png
-│   ├── merge_notes.png
-│   ├── manager_summary.png
-│   ├── processor_report.png
-│   ├── account_analysis.png
-│   └── workflow.gif
-│
-├── sample_data/
-│   ├── UDM_Dispute_Africa.xlsx
-│   ├── UDM_Dispute_Europe.xlsx
-│   └── UDM_Notes.xlsx
-│
-└── output/
-    └── Board_Report.xlsx
+- The dispute management team works with weekly dispute reports organized by customer segment (for example, Africa, Europe, North America, Latin America, and Asia Pacific).
+- Each customer segment has its own dispute workbook containing hundreds or thousands of customer disputes.
+- Every reporting cycle, analysts needed to:
+    - Open the customer segment dispute workbook
+    - Open the UDM_Notes workbook
+    - Match dispute records using a unique identifier
+    - Merge dispute notes into the report
+    - Generate management Pivot Tables
+    - Summarize open disputes by manager
+    - Calculate disputed values
+    - Filter customer accounts based on business criteria
+    - Prepare processor information for email distribution
+- Performing these tasks manually required considerable time and increased the risk of reporting inconsistencies.
 
 ## 📊 Example Reports
 The generated workbook includes multiple analytical views:
@@ -228,31 +187,15 @@ Key Benefits:
 - Enables faster identification of high-value customer disputes
 - Scales efficiently to large dispute datasets
 
-## 📸 Screenshots (just use the guide)
-
-Include screenshots such as:
-
-Customer Segment Input Workbook
-UDM_Notes Workbook
-Macro Execution
-Notes Merge Process
-Manager Summary Pivot Table
-Processor Worksheet
-Customer Account Pivot Table
-Final Board Report
-
-
 ## ▶️ How to Run
-Clone this repository:
-git clone https://github.com/alangudi417/customer-dispute-board-report-automation.git
-Open the Excel macro-enabled workbook.
-Enable macros.
-Run the Main macro.
-Select the desired customer segment report.
-The automation will:
-Open the customer segment dispute workbook
-Merge dispute notes
-Refresh Pivot Tables
-Generate manager summaries
-Create processor reports
-Produce the final Board Report workbook
+1. git clone https://github.com/alangudi417/customer-dispute-board-report-automation.git
+2. Open the Excel macro-enabled workbook.
+    - Enable macros.
+    - Run the desired customer segment macro report.
+    - The automation will:
+        - Open the customer segment dispute workbook
+        - Merge dispute notes
+        - Refresh Pivot Tables
+        - Generate manager summaries
+        - Create processor reports
+        - Produce the final Board Report workbook
